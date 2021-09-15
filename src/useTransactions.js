@@ -15,7 +15,7 @@ const useTransactions = (title) => {
         if(category) category.amount += t.amount
     })
 
-    const filteredCategories = categories.filter(c => c.amount > 0)
+    const filteredCategories = categories.filter(sc => sc.amount > 0)
 
     const chartData = {
         datasets: [{
